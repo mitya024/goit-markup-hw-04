@@ -274,7 +274,28 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.benefits-list::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: var(--color-bg-btn);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(..//images/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(..//images/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(..//images/astronaut.svg);
+}
 .examples-section {
   padding-bottom: 94px;
 }
