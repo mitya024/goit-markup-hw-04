@@ -203,19 +203,18 @@ body {
 .hdr .contact:active {
   color: var(--main-focus-text-blue);
 }
-
+.contacts-list .contact {
+  display: flex;
+  align-items: center;
+}
 .icons-envelope {
   margin-right: 10px;
   fill: currentColor;
-  width: 16px;
-  height: 12px;
 }
 
 .icons-tel {
   margin-right: 10px;
   fill: currentColor;
-  width: 10px;
-  height: 16px;
 }
 
 /* головна сторінка */
