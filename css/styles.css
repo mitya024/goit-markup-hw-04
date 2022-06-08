@@ -409,7 +409,34 @@ body {
 .work-team-soclink:hover .work-team-soclink-icon {
   fill: var(--main-white-color);
 }
-
+.regular-customers {
+  display: flex;
+  justify-content: space-between;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.regular-customers-tittle {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.regular-clients {
+  padding: 94px 0px;
+}
 .logo-footer {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -430,7 +457,6 @@ body {
 .footer-text {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -449,7 +475,6 @@ body {
   display: flex;
 }
 .work-footer-soc-item {
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
