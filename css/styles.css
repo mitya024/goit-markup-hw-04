@@ -19,6 +19,7 @@
   --color-contact: #757575;
   --color-footer: #2f303a;
   --color-bg-btn: #f5f4fa;
+  --icons-main: rgba(175, 177, 184, 1);
 }
 /* загальне до всіх сторінок застосовується */
 p,
@@ -72,8 +73,6 @@ body {
 }
 .logo-footer {
   color: var(--main-white-color);
-}
-.logo-footer {
 }
 .logo-header > span {
   color: var(--main-focus-text-blue);
@@ -400,7 +399,7 @@ body {
   justify-content: center;
 }
 .work-team-soclink-icon {
-  fill: rgba(175, 177, 184, 1);
+  fill: var(--icons-main);
 }
 .work-team-soclink:hover,
 .work-team-soclink:focus {
@@ -414,13 +413,33 @@ body {
   justify-content: space-between;
 }
 .customers-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+.customers-list:hover,
+.customers-list:focus {
+  border-color: var(--main-focus-text-blue);
+}
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.custumers-list-icon {
+  width: 100%;
+  height: 100%;
+  padding: 16px 32px;
+}
+.customers-list-link {
+  fill: var(--icons-main);
+}
+.custumers-list-icon:hover,
+.customers-list-icon:focus {
+  fill: var(--main-focus-text-blue);
 }
 .regular-customers-tittle {
   margin-top: 0px;
