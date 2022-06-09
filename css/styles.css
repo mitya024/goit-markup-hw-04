@@ -319,20 +319,21 @@ body {
 .examples-list {
   border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
-.examples-list:hover,
-.examples-list:focus {
+.examples-list-link:hover,
+.examples-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
-
+.examples-list-link {
+  display: inline-block;
+}
 .team {
   text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
-.examples-section h2 {
+.what-we-do {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -418,45 +419,33 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.customers-list {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-.customers-list:hover,
-.customers-list:focus {
+.customers-list-link:hover,
+.customers-list-link:focus {
   border-color: var(--main-focus-text-blue);
+}
+.customers-list-link:hover .custumers-list-icon,
+.customers-list-link:focus .custumers-list-icon {
+  fill: var(--main-focus-text-blue);
 }
 .customers-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .custumers-list-icon {
-  width: 100%;
-  height: 100%;
-  padding: 16px 32px;
-}
-.customers-list-link {
   fill: var(--icons-main);
-}
-.custumers-list-icon:hover,
-.customers-list-icon:focus {
-  fill: var(--main-focus-text-blue);
 }
 .regular-customers-tittle {
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .regular-clients {
@@ -514,8 +503,8 @@ body {
 .work-footer-soclink:hover .contact-soclink-icon {
   fill: var(--main-white-color);
 }
-.work-footer-soc-item:hover,
-.work-footer-soc-item:focus {
+.work-footer-soclink:hover,
+.work-footer-soclink:focus {
   background-color: var(--main-focus-text-blue);
 }
 .work-footer-soclink {
@@ -584,6 +573,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  color: var(--main-text-color);
 }
 .examples p {
   font-size: 16px;
@@ -608,7 +598,7 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .work-team-discraption {
